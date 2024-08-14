@@ -69,59 +69,59 @@ Sebagai bagian dari tahap exploratory data analysis (EDA), dilakukan visualisasi
 #### a. Univariate Analysis:
 - **Categorical Fitur**:
   - Visualisasi Distribusi `neighbourhood_group`:
-  ![ss6](https://github.com/intancharolina079/Latproyeks1/blob/main/Screenshot%202024-08-14%20113302.png)
+  ![ss6](https://raw.githubusercontent.com/intancharolina079/Latproyeks1/main/Screenshot%202024-08-14%20113302.png)
     - Proses: Membuat plot untuk melihat bagaimana data didistribusikan di berbagai `neighbourhood_group`.
     - Alasan: Untuk memahami sebaran properti di berbagai wilayah utama New York City.
     - Hasil: Memberikan gambaran mengenai wilayah mana yang paling banyak atau paling sedikit digunakan dalam dataset.    
 
   - Visualisasi Distribusi `room_type`:
-    ![ss5](https://github.com/intancharolina079/Latproyeks1/blob/main/Screenshot%202024-08-14%20113417.png)
+    ![ss5](https://raw.githubusercontent.com/intancharolina079/Latproyeks1/main/Screenshot%202024-08-14%20113417.png)
     - Proses: Membuat plot untuk melihat distribusi berbagai tipe kamar (`room_type`).
     - Alasan: Untuk mengetahui preferensi tipe kamar yang ditawarkan di platform Airbnb.
     - Hasil: Memahami dominasi tipe kamar tertentu dalam dataset, yang bisa mempengaruhi harga.
 
 - **Numerical Fitur**:
   - Visualisasi Distribusi `price`:
-    ![ss3](https://github.com/intancharolina079/Latproyeks1/blob/main/Screenshot%202024-08-14%20113433.png)
+    ![ss3](https://raw.githubusercontent.com/intancharolina079/Latproyeks1/main/Screenshot%202024-08-14%20113433.png)
     - Proses: Membuat histogram atau boxplot untuk melihat distribusi harga (`price`).
     - Alasan: Untuk memahami rentang harga dan adanya outliers pada fitur `price`.
     - Hasil: Memberikan informasi mengenai sebaran harga, apakah tersebar normal atau ada anomali.
 
   - Visualisasi Distribusi `minimum_nights`:
-    ![ss2](https://github.com/intancharolina079/Latproyeks1/blob/main/Screenshot%202024-08-14%20113453.png)
+    ![ss2](https://raw.githubusercontent.com/intancharolina079/Latproyeks1/main/Screenshot%202024-08-14%20113453.png)
     - Proses: Membuat histogram untuk melihat sebaran `minimum_nights`.
     - Alasan: Untuk mengetahui seberapa banyak malam minimum yang biasanya disyaratkan oleh host.
     - Hasil: Memahami pola umum dalam persyaratan minimum nights, yang mungkin berdampak pada harga.
 
   - Visualisasi Distribusi `number_of_reviews`:
-    ![ss1](https://github.com/intancharolina079/Latproyeks1/blob/main/Screenshot%202024-08-14%20113500.png)
+    ![ss1](https://raw.githubusercontent.com/intancharolina079/Latproyeks1/main/Screenshot%202024-08-14%20113500.png)
     - Proses: Membuat histogram untuk melihat distribusi `number_of_reviews`.
     - Alasan: Untuk mengetahui pola ulasan yang diterima properti.
     - Hasil: Memberikan insight mengenai popularitas properti berdasarkan jumlah ulasan.
 
   - Visualisasi Distribusi `reviews_per_month`:
-    ![ss](https://github.com/intancharolina079/Latproyeks1/blob/main/Screenshot%202024-08-14%20113508.png)
+    ![ss](https://raw.githubusercontent.com/intancharolina079/Latproyeks1/main/Screenshot%202024-08-14%20113508.png)
     - Proses: Membuat histogram untuk melihat sebaran `reviews_per_month`.
     - Alasan: Untuk memahami frekuensi ulasan yang diterima setiap bulannya.
     - Hasil: Mengetahui bagaimana keterlibatan pengguna dan popularitas properti dari waktu ke waktu.
 
 #### b. Multivariate Analysis:
 - **Categorical Fitur**:
-  ![Screenshot](https://github.com/intancharolina079/Latproyeks1/blob/main/Screenshot%202024-08-14%20172032.png)
+  ![Screenshot](https://raw.githubusercontent.com/intancharolina079/Latproyeks1/main/Screenshot%202024-08-14%20172032.png)
   - Analisis Hubungan antara `neighbourhood_group` dan `room_type`:
     - Proses: Membuat crosstab atau plot untuk melihat hubungan antara wilayah (`neighbourhood_group`) dan tipe kamar (`room_type`).
     - Alasan: Untuk memahami apakah ada preferensi tipe kamar yang dominan di wilayah tertentu.
     - Hasil: Memberikan informasi mengenai kombinasi wilayah dan tipe kamar yang paling populer, yang bisa mempengaruhi harga.
 
 - **Numerical Fitur**:
-  ![ss8](https://github.com/intancharolina079/Latproyeks1/blob/main/111111111111111111111.png)
+  ![ss8](https://raw.githubusercontent.com/intancharolina079/Latproyeks1/main/111111111111111111111.png)
   - Pairplot untuk beberapa fitur (`price`, `minimum_nights`, `number_of_reviews`, `reviews_per_month`, `calculated_host_listings_count`, `availability_365`):
     - Proses: Membuat pairplot untuk melihat hubungan antara beberapa fitur numerik.
     - Alasan: Untuk memahami korelasi dan pola antara berbagai fitur numerik.
     - Hasil: Mengetahui fitur mana yang berkorelasi kuat atau lemah dengan fitur lainnya, yang penting untuk modeling.
 
   - Correlation Matrix untuk Fitur Numerical:
-    ![ss7](https://github.com/intancharolina079/Latproyeks1/blob/main/222222222222.png)
+    ![ss7](https://raw.githubusercontent.com/intancharolina079/Latproyeks1/main/222222222222.png)
     - Proses: Membuat matriks korelasi untuk mengevaluasi hubungan antar fitur numerik.
     - Alasan: Untuk memahami seberapa kuat hubungan antar fitur, yang bisa membantu dalam seleksi fitur.
     - Hasil: Menentukan fitur mana yang memiliki hubungan linier kuat, yang bisa berdampak pada performa model.
@@ -214,7 +214,7 @@ Algoritma boosting yang bertujuan untuk meningkatkan kinerja model dengan fokus 
 ## 6. Evaluation
 Metrik evaluasi yang digunakan untuk mengukur kinerja model adalah Mean Squared Error (MSE). MSE adalah metrik yang menghitung rata-rata dari kuadrat selisih antara nilai prediksi dan nilai aktual. MSE digunakan untuk mengukur seberapa baik model regresi dalam memprediksi nilai numerik, di mana semakin kecil nilai MSE, semakin baik model dalam memprediksi data.
 
-<img src="https://github.com/intancharolina079/Latproyeks1/blob/main/Screenshot%202024-08-14%20173253.png" alt="Deskripsi Gambar" width="300"/>
+<img src="https://raw.githubusercontent.com/intancharolina079/Latproyeks1/main/Screenshot%202024-08-14%20173253.png" alt="Deskripsi Gambar" width="300"/>
 
 Keterangan:
 - N = jumlah dataset
